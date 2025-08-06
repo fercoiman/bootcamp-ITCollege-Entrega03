@@ -1,6 +1,7 @@
 
 var resultado = 0;
 
+
 function main() {
     return;
 }
@@ -41,7 +42,7 @@ function calcular(operacion, operandoA, operandoB) {
     }
 
 function mostrarResultado(){
-    var res = calcular
+    calcular()
 }
 
 document.getElementById("display").innerHTML = <h2>toString.resultado</h2>;

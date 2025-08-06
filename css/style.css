@@ -2,7 +2,7 @@
     display: grid;
     row-gap: 5px;
     column-gap: 5px;
-    width: 150px;
+    width: 225x;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
@@ -14,7 +14,7 @@
     border-color: rgb(71, 75, 78);
     border-radius: 10px;
     padding: 5px;
-    width: 220px;
+    width: 225px;
     
 }
 
@@ -24,7 +24,7 @@
     border-radius: 50%;
     border-color: rgb(71, 75, 78);
     background-color: rgb(71, 75, 78);
-    font-size: large;
+    font-size: x-large;
     color:white
 }
 
