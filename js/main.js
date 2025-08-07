@@ -41,11 +41,14 @@ function calcular(operacion, operandoA, operandoB) {
     return operacion(operandoA, operandoB);
     }
 
-function mostrarResultado(){
-    calcular()
+
+function mostrarResultado(resultado = calcular(division, 303, 22)){
+    const displayResultado = document.getElementById('display');
+    displayResultado.innerText = `${resultado}`;
 }
 
-document.getElementById("display").innerHTML = <h2>toString.resultado</h2>;
 
-var res = calcular(suma, 3, 33);
-alert(res);
+
+mostrarResultado();
+//var res = calcular(suma, 3, 33);
+//alert(res);
