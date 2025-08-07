@@ -1,5 +1,6 @@
 
 var resultado = 0;
+var displayContent = '';
 
 
 function main() {
@@ -34,14 +35,70 @@ function division(arg1, arg2) {
     return res;
 }
 
+
+function uno(){
+    displayContent += '1';
+    return displayContent;
+}
+
+function dos(){
+    displayContent += '2';
+    return displayContent;
+}
+
+function tres(){
+    displayContent += '3';
+    return displayContent;
+}
+
+function cuatro(){
+    displayContent += '4';
+    return displayContent;
+}
+
+function cinco(){
+    displayContent += '5';
+    return displayContent;
+}
+
+function seis(){
+    displayContent += '6';
+    return displayContent;
+}
+
+function siete(){
+    displayContent += '7';
+    return displayContent;
+}
+
+function ocho(){
+    displayContent += '8';
+    return displayContent;
+}
+
+function nueve(){
+    displayContent += '9';
+    return displayContent;
+}
+
+function cero(){
+    if(displayContent.length >= 1){
+        displayContent += '0';
+    }
+    return displayContent;
+}
+
+
+
+
 function calcular(operacion, operandoA, operandoB) {
     return operacion(operandoA, operandoB);
     }
 
 
-function mostrarResultado(resultado = calcular(suma, 33, 22)){
+function mostrarResultado(){
     const displayResultado = document.getElementById('display');
-    var normalizado = limitarAnchoDisplay(resultado);
+    var normalizado = limitarAnchoDisplay(displayContent);
     displayResultado.innerText = `${normalizado}`;
 }
 
