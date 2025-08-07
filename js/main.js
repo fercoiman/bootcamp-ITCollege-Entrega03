@@ -39,9 +39,10 @@ function calcular(operacion, operandoA, operandoB) {
     }
 
 
-function mostrarResultado(resultado = calcular(division, 303, 22)){
+function mostrarResultado(resultado = calcular(suma, 33, 22)){
     const displayResultado = document.getElementById('display');
-    displayResultado.innerText = `${resultado}`;
+    var normalizado = limitarAnchoDisplay(resultado);
+    displayResultado.innerText = `${normalizado}`;
 }
 
 function limitarAnchoDisplay(num) {
