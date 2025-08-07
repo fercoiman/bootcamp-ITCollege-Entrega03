@@ -38,6 +38,7 @@ function division(arg1, arg2) {
 
 function uno(){
     displayContent += '1';
+    console.log(displayContent)
     return displayContent;
 }
 
@@ -96,6 +97,7 @@ function calcular(operacion, operandoA, operandoB) {
     }
 
 
+
 function mostrarResultado(){
     const displayResultado = document.getElementById('display');
     var normalizado = limitarAnchoDisplay(displayContent);
@@ -108,6 +110,17 @@ function limitarAnchoDisplay(num) {
     return str.length <= maxChars ? str : str.slice(0, maxChars);
 }
 
+function limpiarDisplay(){
+    const disp = document.getElementById('display');
+    disp.addEventListener('dblclick', resetDisplay());
+    return
+}
+
+function resetDisplay(){
+    displayContent = '88'
+    console.log(displayContent)
+    return displayContent
+}
 
 mostrarResultado();
 //var res = calcular(suma, 3, 33);
