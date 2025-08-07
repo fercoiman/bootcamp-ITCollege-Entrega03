@@ -34,9 +34,6 @@ function division(arg1, arg2) {
     return res;
 }
 
-
-
-
 function calcular(operacion, operandoA, operandoB) {
     return operacion(operandoA, operandoB);
     }
@@ -47,6 +44,11 @@ function mostrarResultado(resultado = calcular(division, 303, 22)){
     displayResultado.innerText = `${resultado}`;
 }
 
+function limitarAnchoDisplay(num) {
+    var maxChars = 13;
+    const str = String(num);
+    return str.length <= maxChars ? str : str.slice(0, maxChars);
+}
 
 
 mostrarResultado();
