@@ -2,7 +2,34 @@
 var resultado = 0;
 var displayContent = '';
 
+// agregados ***//
 
+const display = document.querySelector(".display");
+const botones = document.querySelectorAll(".btn");
+
+botones.forEach(btn =>{
+    btn.addEventListener( 'click', buttonClick);});
+
+function buttonClick (evt) {
+    const ingreso = evt.target.textContent;
+    if(display.textContent === '0'){
+        display.textContent = ingreso;
+    }
+    else{
+        display.textContent += ingreso;
+    }
+}
+
+function limitarAnchoDisplay(num) {
+    var maxChars = 13;
+    const str = String(num);
+    return str.length <= maxChars ? str : str.slice(0, maxChars);
+}
+
+  //b.addEventListener( 'click', () => { console.log(b.textContent) });
+
+
+/*
 function main() {
     return;
 }
@@ -67,10 +94,6 @@ function seis(){
     return displayContent;
 }
 
-function siete(){
-    displayContent += '7';
-    return displayContent;
-}
 
 function ocho(){
     displayContent += '8';
@@ -122,6 +145,6 @@ function resetDisplay(){
     return displayContent
 }
 
-mostrarResultado();
+mostrarResultado();*/
 //var res = calcular(suma, 3, 33);
 //alert(res);
